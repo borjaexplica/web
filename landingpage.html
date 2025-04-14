@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borja Explica - Asesorías para Creadores</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #111; }
+    header { background: #111; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+    .header-left { display: flex; align-items: center; gap: 15px; }
+    .header-left img { width: 50px; height: 50px; border-radius: 50%; }
+    header h1 { margin: 0; font-size: 24px; }
+    header a { color: #00ffcc; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+    header a:hover { color: #00ddaa; }
+
+    .hero { background: linear-gradient(135deg, #111, #333); color: white; text-align: center; padding: 100px 20px; }
+    .hero h2 { font-size: 36px; margin-bottom: 10px; }
+    .hero p { font-size: 20px; margin-bottom: 20px; }
+    .hero a { background: #00ffcc; color: black; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: background 0.3s; }
+    .hero a:hover { background: #00e6b8; }
+
+    .section { padding: 60px 20px; max-width: 800px; margin: auto; }
+    .section h3 { font-size: 28px; margin-bottom: 20px; text-align: center; }
+    .section p, .section ul { font-size: 18px; line-height: 1.6; text-align: justify; }
+    .services { text-align: center; }
+    .services ul { list-style: none; padding: 0; display: inline-block; text-align: left; }
+    .services li { margin-bottom: 10px; position: relative; padding-left: 20px; }
+    .services li::before { content: '✓'; position: absolute; left: 0; color: #00cc99; font-weight: bold; }
+
+    .testimonials p { font-style: italic; color: #333; margin-bottom: 15px; border-left: 4px solid #00cc99; padding-left: 15px; }
+    .testimonials span { display: block; margin-top: 5px; font-weight: bold; color: #111; font-style: normal; }
+
+    .contact-form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: auto; }
+    .contact-form input, .contact-form textarea { padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 6px; }
+    .contact-form button { padding: 12px; background: #00cc99; color: white; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; transition: background 0.3s; }
+    .contact-form button:hover { background: #00b88a; }
+
+    footer { background: #111; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    footer a { color: #00ffcc; margin: 0 10px; text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .hero h2 { font-size: 28px; }
+      .hero p { font-size: 16px; }
+      .section h3 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="tu-foto.jpg" alt="Foto de Borja">
+      <h1>Borja Explica</h1>
+    </div>
+    <a href="#contacto">Contáctame</a>
+  </header>
+
+  <section class="hero">
+    <h2>Convierte visitas en suscriptores. Y suscriptores en fans.</h2>
+    <p>Aprende lo que funciona y aplícalo directamente en tu canal con mi ayuda.</p>
+    <a href="#contacto">Quiero crecer en YouTube</a>
+  </section>
+
+  <section class="section">
+    <h3>Sobre mí</h3>
+    <p>Soy Borja. A los 17 años empecé a crear contenido en YouTube. ¿Mi objetivo? Costear mi material de skate y vivir de lo que más me gusta. En solo 2 meses logré monetizar mi canal. Y así aprendí lo más importante: que la <strong>constancia</strong> y una buena <strong>estrategia</strong> son las claves del éxito.</p>
+
+    <p>Pasaron los años, y después de estudiar y trabajar en grandes empresas, me di cuenta de que lo mío no era estar en una oficina, sino ayudar a otros creadores a <strong>romperla en YouTube</strong>. Aquí estoy, para guiarte con estrategias que <strong>realmente funcionan</strong>.</p>
+
+    <p>Nada de promesas vacías ni atajos. Aquí solo vas a encontrar <strong>resultados</strong>. Porque cada creador es único, y eso es lo que haré: darte un plan adaptado a ti para que llegues a donde te mereces.</p>
+
+    <p>Yo ya lo hice. Ahora te toca a ti. Vamos a hacerlo juntos.</p>
+  </section>
+
+  <section class="section services">
+    <h3>Servicios</h3>
+    <ul>
+      <li>Consigue más clics con miniaturas que destacan entre la multitud</li>
+      <li>Aumenta la retención mejorando la estructura de tus videos</li>
+      <li>Recibe asesorías 1:1 enfocadas en tus objetivos reales</li>
+      <li>Crea un plan de crecimiento que puedes seguir sin frustraciones</li>
+    </ul>
+  </section>
+
+  <section class="section testimonials">
+    <h3>Lo que otros creadores dicen</h3>
+    <p>"Gracias a Borja cambié la forma de pensar mis videos. Subí 30% en clics en dos semanas."<span>– @ejemplo</span></p>
+    <p>"Borja me ayudó a entender por qué mi canal no crecía. Hoy tengo una comunidad más activa que nunca."<span>– @inspirador</span></p>
+    <p>"Pensaba que necesitaba mejor equipo, pero lo que me faltaba era estrategia. Eso lo encontré con Borja."<span>– @creadorfeliz</span></p>
+  </section>
+
+  <section class="section" id="contacto">
+    <h3>¿Listo para dejar de improvisar y empezar a crecer en serio?</h3>
+    <p>Rellena el formulario o agenda una llamada directamente conmigo. Vamos a trabajar juntos tu canal con estrategia y claridad.</p>
+    <p><a href="https://calendly.com/borjaexplica" target="_blank">Agendar en Calendly</a></p>
+
+    <form class="contact-form" action="https://formspree.io/f/mnqeknpn" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo electrónico" required>
+      <textarea name="mensaje" rows="5" placeholder="¿En qué te puedo ayudar?" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Sígueme en <a href="https://youtube.com/@borjaexplica" target="_blank">YouTube</a></p>
+    <p>&copy; 2025 Borja Explica</p>
+  </footer>
+</body>
+</html>
